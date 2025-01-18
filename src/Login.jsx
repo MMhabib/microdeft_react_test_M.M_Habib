@@ -15,7 +15,8 @@ console.log(user);
 fetch('https://react-interview.crd4lc.easypanel.host/api/login',{
   method:'POST',
   header:{
-    'content-type':'application/json'
+    'content-type':'application/json',
+    
   },
   body:JSON.stringify(user)
 })

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Login from './Login.jsx';
 import Form from './Form.jsx';
+import Card from './Card.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/form",
     element: <Form/>,
+  },
+  {
+    path: "/card",
+    element: <Card></Card>,
   },
 ]);
 

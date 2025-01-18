@@ -14,17 +14,17 @@ function Form() {
     const badge_text=form.badge_text.value
     const formdata={name,description,title,badge_text}
 console.log(formdata);
-// fetch('https://react-interview.crd4lc.easypanel.host/api/register',{
-//   method:'POST',
-//   header:{
-//     'content-type':'application/json'
-//   },
-//   body:JSON.stringify(user)
-// })
-// .then(res=>res.json())
-// .then(data=>{
-//   console.log(data)
-// })
+fetch('https://react-interview.crd4lc.easypanel.host/api/register',{
+  method:'POST',
+  header:{
+    'content-type':'application/json'
+  },
+  body:JSON.stringify(user)
+})
+.then(res=>res.json())
+.then(data=>{
+  console.log(data)
+})
 
   }
 
